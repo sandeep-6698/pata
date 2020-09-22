@@ -2,41 +2,49 @@
     font-size: 3rem;
     font-weight: 1000;
     color: $primary-color-dark;
-    @media screen and (max-width: $screen-md) {
-     font-size: 2.8rem;
-    }
-    @media screen and (max-width: $screen-sm) {
-        font-size: 2.5rem;
-       }
+    // @media screen and (max-width: $screen-md) {
+    //  font-size: 2.8rem;
+    // }
+    // @media screen and (max-width: $screen-sm) {
+    //     font-size: 2.5rem;
+    //    }
     }
 .heading-2{
 font-size: 2rem;
-@media screen and (max-width: $screen-md) {
-    font-size: 1.8rem;
-}
-@media screen and (max-width: $screen-sm) {
-    font-size: 1.5rem;
-   }
+// @media screen and (max-width: $screen-md) {
+//     font-size: 1.8rem;
+// }
+// @media screen and (max-width: $screen-sm) {
+//     font-size: 1.5rem;
+//    }
 }
 .heading-3{
     font-size: 1.5rem;
-    @media screen and (max-width: $screen-md) {
-        font-size: 1.3rem;
-    }
-    @media screen and (max-width: $screen-sm) {
-        font-size: 1.1rem;
-       }
+    // @media screen and (max-width: $screen-md) {
+    //     font-size: 1.3rem;
+    // }
+    // @media screen and (max-width: $screen-sm) {
+    //     font-size: 1.1rem;
+    //    }
+    //    @media screen and (max-width: $screen-xs) {
+    //     font-size: 1.2rem;
+    //    }
     }
 .heading-4{
         font-size: .8rem;
         font-weight: bold;
-        @media screen and (max-width: $screen-md) {
-            font-size: .65rem;
-           }
+        // @media screen and (max-width: $screen-md) {
+        //     font-size: .65rem;
+        //    }
+        //    @media screen and (max-width: $screen-xs) {
+        //     font-size: .8rem;
+        //    }
         }
 p{
    color: $primary-text-color;
-   //font-size: 1rem;
+   @media screen and (max-width: $screen-xs) {
+    font-size: .8rem;
+   }
 }
 .mb-sm{
     margin-bottom: 1rem;
