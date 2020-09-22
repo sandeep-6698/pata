@@ -39,9 +39,6 @@ body {
 
 p {
   color: #666666; }
-  @media screen and (max-width: 40.62em) {
-    p {
-      font-size: .8rem; } }
 
 .mb-sm {
   margin-bottom: 1rem; }
@@ -102,12 +99,12 @@ p {
   text-transform: uppercase;
   border-radius: 2rem;
   box-shadow: 0 0 3px #7e7d7d;
-  font-size: 1rem; }
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer; }
   .btn:active {
     box-shadow: 0 0 2px #7e7d7d;
     transform: translateY(2px); }
-  .btn:hover {
-    cursor: pointer; }
 
 .top-icon, .bottom-icon, .next-icon {
   color: #ffff;
@@ -292,6 +289,7 @@ p {
       grid-row: 7 / 8; } }
   @media screen and (max-width: 40.62em) {
     .people {
+      justify-self: center;
       grid-template-columns: max-content; } }
   .people .title {
     grid-row: 1 / 2; }

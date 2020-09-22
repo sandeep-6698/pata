@@ -9,15 +9,13 @@
     border-radius: 2rem;
     box-shadow: 0 0 3px rgb(126, 125, 125);
     font-size: 1rem;
+    outline: none;
+    cursor: pointer;
 
 &:active {
   box-shadow: 0 0 2px rgb(126, 125, 125);
   transform: translateY(2px);
 }
-    //animation: hove-effect 2sec ease;
-    &:hover{
-        cursor: pointer;
-    }
 }
 .top-icon,.bottom-icon,.next-icon{
 color: $primary-color-light;

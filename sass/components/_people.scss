@@ -8,6 +8,7 @@
     }
     @media screen and (max-width: $screen-xs) {
     //    grid-template-rows: repeat(2,min-content);
+    justify-self: center;
     grid-template-columns: max-content;
     }
     & .title{
