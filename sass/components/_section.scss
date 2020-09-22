@@ -4,16 +4,18 @@
     @media screen and (max-width: $screen-sm) {
         grid-row: 4 / 5;
     }
-    @media screen and (max-width: $screen-xs) {
-       justify-self: stretch;
-       align-self: stretch;
-    }
+    // @media screen and (max-width: $screen-xs) {
+    //    justify-self: stretch;
+    //    align-self: stretch;
+    // }
     & .image{
         width: 50%;
         max-height: 20rem;
         z-index: 10;
         @media screen and (max-width: $screen-xs) {
             width: 100%;
+            //height: 100%;
+            //justify-self: center;
          }
     }
 }

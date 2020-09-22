@@ -14,11 +14,11 @@
             grid-row: 1 / -1;
             grid-column: 1 / -1;
             // grid-template-rows: repeat(2, min-content);
-            grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
-            @media screen and (max-width: $screen-xs) {
-                grid-template-columns: repeat(1,20rem);
-                justify-content: center;
-            }
+            grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+            // @media screen and (max-width: $screen-xs) {
+            //     grid-template-columns: repeat(1,20rem);
+            //     justify-content: center;
+            // }
             row-gap: 1.5rem;
             column-gap: 1.5rem;
             @media screen and (max-width: $screen-sm) {

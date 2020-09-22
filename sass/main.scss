@@ -35,6 +35,7 @@
         grid-template-columns: [full-start] 5rem [center-start]repeat(8, [cols-start] minmax(min-content,6.3rem) [cols-end]) [center-end] 5rem [full-end] ;   
     }
     @media screen and (max-width: $screen-xs) {
+        grid-template-rows: 50vh max-content repeat(8,min-content);
          grid-template-columns: [full-start] 1fr [center-start] repeat(8, [cols-start] minmax(min-content,6.3rem) [cols-end]) [center-end] 1fr [full-end] ;   
      }
 }

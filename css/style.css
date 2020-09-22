@@ -210,13 +210,9 @@ p {
     display: grid;
     grid-row: 1 / -1;
     grid-column: 1 / -1;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     row-gap: 1.5rem;
     column-gap: 1.5rem; }
-    @media screen and (max-width: 40.62em) {
-      .home .cards {
-        grid-template-columns: repeat(1, 20rem);
-        justify-content: center; } }
     @media screen and (max-width: 56.25em) {
       .home .cards {
         row-gap: 1rem;
@@ -371,10 +367,6 @@ p {
   @media screen and (max-width: 56.25em) {
     .section-picture {
       grid-row: 4 / 5; } }
-  @media screen and (max-width: 40.62em) {
-    .section-picture {
-      justify-self: stretch;
-      align-self: stretch; } }
   .section-picture .image {
     width: 50%;
     max-height: 20rem;
@@ -644,4 +636,5 @@ p {
       grid-template-columns: [full-start] 5rem [center-start] repeat(8, [cols-start] minmax(min-content, 6.3rem) [cols-end]) [center-end] 5rem [full-end]; } }
   @media screen and (max-width: 40.62em) {
     .container {
+      grid-template-rows: 50vh max-content repeat(8, min-content);
       grid-template-columns: [full-start] 1fr [center-start] repeat(8, [cols-start] minmax(min-content, 6.3rem) [cols-end]) [center-end] 1fr [full-end]; } }
