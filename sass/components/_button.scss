@@ -1,0 +1,90 @@
+.btn{
+    margin-top: 1rem;
+    border: none;
+    background-color: $primary-color-dark;
+    width: 7rem;
+    height: 2.7rem;
+    color: $primary-color-light;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    box-shadow: 0 0 3px rgb(126, 125, 125);
+    font-size: 1rem;
+
+&:active {
+  box-shadow: 0 0 2px rgb(126, 125, 125);
+  transform: translateY(2px);
+}
+    //animation: hove-effect 2sec ease;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.top-icon,.bottom-icon,.next-icon{
+color: $primary-color-light;
+display: block;
+font-size: 1.2rem;
+background-color:$primary-color-dark;
+//display: block;
+height: 2.5rem;
+width: 2.5rem;
+border-radius: 50%;
+position: relative;
+///animation: hove-effect 2sec ease;
+i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+}
+.top-icon{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    justify-self: end;
+    z-index: 10;
+    transform: rotate(-90deg);
+    margin-bottom: 4.5rem;
+    cursor: pointer;
+}
+.bottom-icon{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    justify-self: end;
+    z-index: 10;
+    margin-top: 4.5rem;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.nextBtn{
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    align-self: center;
+    justify-self: end;
+    transform: translateX(8rem);
+    @media screen and (max-width: $screen-md) {
+        transform: translateX(2.5rem);
+    }
+    @media screen and (max-width: $screen-lg) {
+        transform: translateX(4rem);
+    }
+    @media screen and (max-width: $screen-xs) {
+        grid-row: 3 / 4;
+        justify-self: center;
+    }
+    
+}
+.card-btn{
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    height: 1.5rem;
+    width: 4.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    background-color: $primary-color-dark;
+    color: $primary-color-light;
+    margin: .5rem;
+    cursor: pointer;
+}

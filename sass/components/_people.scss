@@ -1,0 +1,41 @@
+.people{
+    grid-row: 6 / 7;
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    @media screen and (max-width: $screen-sm) {
+        grid-row: 7 / 8;
+    }
+    @media screen and (max-width: $screen-xs) {
+    //    grid-template-rows: repeat(2,min-content);
+    grid-template-columns: max-content;
+    }
+    & .title{
+        grid-row: 1 / 2;
+        @media screen and (max-width: $screen-xs) {
+           grid-row: 1 / 2;
+           text-align: center;
+        }
+    }
+    & .text{
+        grid-row: 1 / -1;
+        text-align: justify;
+        @media screen and (max-width: $screen-xs) {
+            grid-row: 2 / 3;
+            text-align: center;
+            width: 70%;
+            justify-self: center;
+         }
+        & p
+        {
+            span:nth-child(1)
+            {
+                color: $primary-color-dark;
+            }
+            span:nth-child(2)
+            {
+                color: #000000;
+            }
+        }
+    }
+}

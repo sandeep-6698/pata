@@ -1,0 +1,35 @@
+.social-bar{
+    margin-top: 2rem;
+    grid-row: 2 / 3;
+    grid-column: center-start / full-end;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: start;
+    @media screen and (max-width: $screen-sm) {
+        grid-row: 3 / 4;
+    }
+    &-text{
+        //padding-right: 5rem;
+        text-align: justify;
+        width: 80%;
+        @media screen and (max-width: $screen-xs) {
+           justify-self: center;
+        }
+    }
+    &-icon{
+        justify-self: end;
+        align-self: end;
+        margin-right: 1rem;
+        @media screen and (max-width: $screen-xs) {
+            justify-self: center;
+            margin-right: 0 ;
+        }
+        & a{
+            display: inline-block;
+            margin-left: .9rem;
+            font-size: 1rem;
+            color: $primary-text-color;
+        }
+        
+    }
+}

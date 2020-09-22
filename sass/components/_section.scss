@@ -1,0 +1,45 @@
+.section-picture{
+    grid-row: 3 / 4;
+    grid-column: center-start / center-end ;
+    @media screen and (max-width: $screen-sm) {
+        grid-row: 4 / 5;
+    }
+    @media screen and (max-width: $screen-xs) {
+       justify-self: stretch;
+       align-self: stretch;
+    }
+    & .image{
+        width: 50%;
+        max-height: 20rem;
+        z-index: 10;
+        @media screen and (max-width: $screen-xs) {
+            width: 100%;
+         }
+    }
+}
+.section-link{
+    grid-row: 3 / 4;
+    grid-column: cols-start 5/ center-end;
+    align-self: center;
+    margin-left: 3rem;
+    @media screen and (max-width: $screen-sm) {
+        grid-row: 4 / 5;
+        margin-left: 9rem;
+    }
+    @media screen and (max-width: $screen-xs) {
+        grid-column: cols-start / center-end;
+        margin-left: 0;
+        justify-self: center;
+        text-align: center;
+
+    }
+    p{
+        width: 70%;
+        text-align: justify;
+        @media screen and (max-width: $screen-xs) {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+}

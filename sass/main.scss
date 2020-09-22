@@ -1,0 +1,40 @@
+@import "abstract/variables";
+@import "abstract/mixins";
+@import "abstract/animations";
+
+@import "base/base";
+@import "base/typography";
+
+
+@import "components/button";
+@import "components/heading";
+@import "components/home";
+@import "components/contact";
+@import "components/story";
+@import "components/people";
+@import "components/social-bar";
+@import "components/section";
+@import "components/experince";
+@import "components/side-bar";
+@import "components/icons";
+
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/home.scss";
+@import "pages/second.scss";
+
+.container{
+    display: grid;
+    grid-template-rows: 40vw repeat(9,min-content);
+    grid-template-columns: [side-start] 8rem [side-end full-start] 1fr [center-start]repeat(8, [cols-start] minmax(min-content,6.3rem) [cols-end]) [center-end]2fr [full-end] ;   
+
+    @media screen and (max-width: $screen-sm) {
+       grid-template-rows: 40vw max-content repeat(8,min-content);
+        grid-template-columns: [full-start] 5rem [center-start]repeat(8, [cols-start] minmax(min-content,6.3rem) [cols-end]) [center-end] 5rem [full-end] ;   
+    }
+    @media screen and (max-width: $screen-xs) {
+         grid-template-columns: [full-start] 1fr [center-start] repeat(8, [cols-start] minmax(min-content,6.3rem) [cols-end]) [center-end] 1fr [full-end] ;   
+     }
+}

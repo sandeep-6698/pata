@@ -1,0 +1,30 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family: 'Poppins' !important;
+    font-size: 62.5%;
+    background-color: #FFFFFF;
+    max-width: 1920px; 
+	//margin: 0 auto; 
+    @media screen and (min-width: $screen-xl) {
+        font-size: 100% ;
+    }
+    @media screen and (max-width: $screen-lg) {
+        font-size: 60% !important;
+    }
+    @media screen and (max-width: $screen-md) {
+        font-size: 50% !important;
+    }
+    @media screen and (max-width: $screen-sm) {
+        font-size: 40% !important;
+    }
+    @media screen and (max-width: $screen-xs) {
+        font-size: 30% !important;
+        margin: 0;
+    }
+ }
+

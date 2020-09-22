@@ -1,0 +1,11 @@
+.side-bar{
+    grid-row: 2 / -1;
+    grid-column: side-start / side-end;
+    margin: 0 auto;
+    margin-top: 2rem;
+    @media screen and (max-width: $screen-sm) {
+        grid-row: 2 / 3;
+    grid-column: center-start / center-end;
+    margin: 0;
+    }
+}
