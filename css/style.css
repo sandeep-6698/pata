@@ -2,16 +2,10 @@
   padding: 0;
   margin: 0; }
 
-html {
-  margin: 0;
-  padding: 0; }
-
 body {
   font-family: 'Poppins' !important;
   font-size: 62.5%;
-  background-color: #FFFFFF;
-  max-width: 1920px;
-  box-sizing: border-box; }
+  background-color: #FFFFFF; }
   @media screen and (min-width: 120em) {
     body {
       font-size: 100%; } }
@@ -26,8 +20,7 @@ body {
       font-size: 40% !important; } }
   @media screen and (max-width: 40.62em) {
     body {
-      font-size: 30% !important;
-      overflow-x: hidden !important; } }
+      font-size: 30% !important; } }
 
 .heading-1 {
   font-size: 3rem;
@@ -151,21 +144,25 @@ p {
 
 .top-icon {
   grid-row: 1 / 2;
-  grid-column: 1 / 2;
-  justify-self: end;
+  grid-column: 1 / -1;
   z-index: 10;
-  transform: rotate(-90deg);
-  margin-bottom: 4.5rem;
+  justify-self: end;
+  transform: rotate(-90deg) translateX(2.3rem);
   cursor: pointer; }
+  @media screen and (max-width: 40.62em) {
+    .top-icon {
+      transform: rotate(-90deg) translateX(2.3rem) scale(0.7); } }
 
 .bottom-icon {
   grid-row: 1 / 2;
-  grid-column: 1 / 2;
-  justify-self: end;
+  grid-column: 1 / -1;
   z-index: 10;
-  margin-top: 4.5rem;
-  transform: rotate(90deg);
+  justify-self: end;
+  transform: rotate(90deg) translateX(2.3rem);
   cursor: pointer; }
+  @media screen and (max-width: 40.62em) {
+    .bottom-icon {
+      transform: rotate(90deg) translateX(2.3rem) scale(0.7); } }
 
 .nextBtn {
   grid-row: 1 / -1;
@@ -182,7 +179,8 @@ p {
   @media screen and (max-width: 40.62em) {
     .nextBtn {
       grid-row: 3 / 4;
-      justify-self: center; } }
+      justify-self: center;
+      transform: translateX(0) scale(0.7); } }
 
 .card-btn {
   grid-row: 1 / -1;
@@ -212,12 +210,13 @@ p {
     display: grid;
     grid-row: 1 / -1;
     grid-column: 1 / -1;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     row-gap: 1.5rem;
     column-gap: 1.5rem; }
     @media screen and (max-width: 40.62em) {
       .home .cards {
-        grid-template-columns: repeat(1, 1fr); } }
+        grid-template-columns: repeat(1, 20rem);
+        justify-content: center; } }
     @media screen and (max-width: 56.25em) {
       .home .cards {
         row-gap: 1rem;
@@ -484,13 +483,12 @@ p {
     cursor: pointer; }
   .header .banner {
     grid-row: 1 / 2;
-    grid-column: 1 / 2;
-    display: block;
+    grid-column: 1 / full-end;
     width: 100%;
     height: 100%; }
   .header .shape {
     grid-row: 1 / 2;
-    grid-column: 1 / 2;
+    grid-column: 1 / full-end;
     justify-self: end;
     align-self: end;
     max-width: 30%;

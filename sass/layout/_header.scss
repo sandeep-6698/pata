@@ -13,14 +13,13 @@
     }
     & .banner{
         grid-row: 1 / 2;
-        grid-column: 1 / 2;
-        display: block;
+        grid-column: 1 / full-end;
         width: 100%;
         height: 100%;
     }
     & .shape{
         grid-row: 1 / 2;
-        grid-column: 1 / 2;
+        grid-column: 1 / full-end;
         justify-self: end;
         align-self: end;
         max-width: 30%;
