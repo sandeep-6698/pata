@@ -27,6 +27,9 @@
         max-height: 30rem;
         margin-bottom: -5%;
         z-index: -10;
+        @media screen and(max-width: $screen-xs) {
+            max-width: 25%;
+        }
     }
     & .ovals{
         grid-row: 1 / 2;

@@ -3,13 +3,16 @@
     margin: 0;
 }
 
-
+html{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Poppins' !important;
     font-size: 62.5%;
     background-color: #FFFFFF;
     max-width: 1920px; 
-	//margin: 0 auto; 
+    box-sizing: border-box;
     @media screen and (min-width: $screen-xl) {
         font-size: 100% ;
     }
@@ -24,7 +27,7 @@ body{
     }
     @media screen and (max-width: $screen-xs) {
         font-size: 30% !important;
-        margin: 0;
+        overflow-x: hidden !important;
     }
  }
 
